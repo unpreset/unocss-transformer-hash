@@ -1,0 +1,69 @@
+{
+  "name": "unocss-transformer-starter",
+  "type": "module",
+  "version": "0.0.0",
+  "packageManager": "pnpm@9.12.3",
+  "description": "A Unocss transformer starter template.",
+  "license": "MIT",
+  "homepage": "https://github.com/unpreset/unocss-transformer-starter#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unpreset/unocss-transformer-starter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/unpreset/unocss-transformer-starter/issues"
+  },
+  "keywords": [
+    "unpreset",
+    "unocss",
+    "unocss transformer"
+  ],
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./dist/*",
+        "./dist/index.d.ts"
+      ]
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "unbuild",
+    "dev": "unbuild --stub",
+    "prepublishOnly": "pnpm run build",
+    "release": "bumpp --commit --push --tag && pnpm publish",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "test": "vitest",
+    "test:update": "vitest -u",
+    "typecheck": "tsc --noEmit",
+    "play": "npm -C playground run dev"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^3.8.0",
+    "@babel/types": "^7.26.0",
+    "@types/node": "^22.9.0",
+    "bumpp": "^9.8.1",
+    "eslint": "^9.14.0",
+    "esno": "^4.8.0",
+    "magic-string": "^0.30.12",
+    "typescript": "^5.6.3",
+    "unbuild": "^2.0.0",
+    "unocss": "^0.64.0",
+    "vite": "^5.4.10",
+    "vitest": "^2.1.4"
+  }
+}
