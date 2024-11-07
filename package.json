@@ -1,17 +1,18 @@
 {
-  "name": "unocss-transformer-starter",
+  "name": "unocss-transformer-hash",
   "type": "module",
   "version": "0.0.0",
   "packageManager": "pnpm@9.12.3",
-  "description": "A Unocss transformer starter template.",
+  "description": "Unocss transformer to hash class names",
+  "author": "Chris <https://github.com/zyyv>",
   "license": "MIT",
-  "homepage": "https://github.com/unpreset/unocss-transformer-starter#readme",
+  "homepage": "https://github.com/unpreset/unocss-transformer-hash#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/unpreset/unocss-transformer-starter.git"
+    "url": "git+https://github.com/unpreset/unocss-transformer-hash.git"
   },
   "bugs": {
-    "url": "https://github.com/unpreset/unocss-transformer-starter/issues"
+    "url": "https://github.com/unpreset/unocss-transformer-hash/issues"
   },
   "keywords": [
     "unpreset",

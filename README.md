@@ -1,39 +1,60 @@
-<p align="center">
-<img src="logo" alt='logo' style="width:100px;" />
-</p>
+<h1 align="center">unocss-transformer-hash</h1>
 
-<h1 align="center">unocss-transformer-starter</h1>
-
-<p align="center">A Unocss transformer starter template.</p>
+<p align="center">A Unocss transformer hash template.</p>
 
 <p align="center">
 <a>
-<img src="https://img.shields.io/npm/v/unocss-transformer-starter?style=flat&colorA=080f12&colorB=1fa669" alt="npm version" />
+<img src="https://img.shields.io/npm/v/unocss-transformer-hash?style=flat&colorA=080f12&colorB=1fa669" alt="npm version" />
 </a>
 <a>
-<img src="https://img.shields.io/npm/dm/unocss-transformer-starter?style=flat&colorA=080f12&colorB=1fa669" alt="npm downloads" />
+<img src="https://img.shields.io/npm/dm/unocss-transformer-hash?style=flat&colorA=080f12&colorB=1fa669" alt="npm downloads" />
 </a>
 <a>
-<img src="https://img.shields.io/github/license/unpreset/unocss-transformer-starter.svg?style=flat&colorA=080f12&colorB=1fa669" alt="License" />
+<img src="https://img.shields.io/github/license/unpreset/unocss-transformer-hash.svg?style=flat&colorA=080f12&colorB=1fa669" alt="License" />
 </a>
 </p>
 
 ## Install
 ```shell
-pnpm i -D unocss-transformer-starter
+pnpm i -D unocss-transformer-hash
 ```
 
 ```ts
 // uno.config.ts
 import { defineConfig } from 'unocss'
-import transformerAlias from 'unocss-transformer-starter'
+import transformerHash from 'unocss-transformer-hash'
 
 export default defineConfig({
   // ...
   transformers: [
-    transformerAlias(),
+    transformerHash({
+      // options
+    }),
   ],
 })
+```
+
+## Usage
+
+```html
+<div class="flex items-center justify-center hover:text-red"></div>
+```
+
+Will be transformed to:
+
+```html
+<div class="222f 7155 a503 sm:hover:5d96"></div>
+```
+
+## Options
+
+```ts
+export interface TransformerHashOptions {
+  /**
+   * Custom hash function
+   */
+  hashfn?: (input: string) => string
+}
 ```
 
 ## License

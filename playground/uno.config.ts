@@ -1,14 +1,16 @@
 import {
   defineConfig,
+  presetAttributify,
   presetUno,
 } from 'unocss'
-import transformerStarter from 'unocss-transformer-starter'
+import transformerHash from 'unocss-transformer-hash'
 
 export default defineConfig({
   presets: [
     presetUno(),
+    presetAttributify(),
   ],
   transformers: [
-    transformerStarter(),
+    transformerHash(),
   ],
 })
