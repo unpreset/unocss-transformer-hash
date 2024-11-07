@@ -1,7 +1,7 @@
 {
   "name": "unocss-transformer-hash",
   "type": "module",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "packageManager": "pnpm@9.12.3",
   "description": "Unocss transformer to hash class names",
   "author": "Chris <https://github.com/zyyv>",
