@@ -43,7 +43,7 @@ export default defineConfig({
 Will be transformed to:
 
 ```html
-<div class="222f 7155 a503 sm:hover:5d96"></div>
+<div class="222f 7155 a503 hover:5d96"></div>
 ```
 
 ## Options
